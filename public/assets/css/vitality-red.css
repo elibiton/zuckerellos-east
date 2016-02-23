@@ -222,7 +222,7 @@ hr.colored {
 }
 .navbar-default .navbar-nav li a,
 .navbar-inverse .navbar-nav li a {
-  color: white;
+  color: #F70400;
 }
 .navbar-default .navbar-nav li a:hover,
 .navbar-inverse .navbar-nav li a:hover {
@@ -276,7 +276,7 @@ header {
   padding: 100px 0;
 }
 header .intro-content {
-  color: white;
+  color: #F70400;
   text-align: center;
   position: relative;
 }
@@ -330,7 +330,7 @@ header .scroll-down .btn:hover {
     background-attachment: scroll;
   }
   header .intro-content {
-    color: white;
+    color: #F70400;
     text-align: center;
     width: 50%;
     margin: auto;
