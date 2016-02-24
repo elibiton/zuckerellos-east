@@ -2,7 +2,7 @@
 // check if fields passed are empty
 if(empty($_POST['name'])  		||
    empty($_POST['email']) 		||
-   empty($_POST['phone']) 		||
+   empty($_POST['date']) 		||
    empty($_POST['message'])	||
    !filter_var($_POST['email'],FILTER_VALIDATE_EMAIL))
    {
@@ -12,7 +12,7 @@ if(empty($_POST['name'])  		||
 	
 $name = $_POST['name'];
 $email_address = $_POST['email'];
-$phone = $_POST['phone'];
+$date = $_POST['date'];
 $message = $_POST['message'];
 	
 // create email body and send it	
