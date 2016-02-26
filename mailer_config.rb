@@ -3,7 +3,7 @@ class Mailer < ActionMailer::Base
     mail(
         :to      => "maria@rmsolutionsusa.com",
         :from    => "re@escalatecorp.com",
-        :subject => "Customer Information") do |format|
+        :subject => "Zuckerellos' Customer Information") do |format|
       format.html {
         render locals: {
                    params: params
