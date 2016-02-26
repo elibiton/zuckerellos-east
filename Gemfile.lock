@@ -31,7 +31,9 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.4.0)
     builder (3.2.2)
+    daemons (1.2.3)
     erubis (2.7.0)
+    eventmachine (1.0.9.1)
     globalid (0.3.5)
       activesupport (>= 4.1.0)
     i18n (0.7.0)
@@ -66,6 +68,10 @@ GEM
       rack (~> 1.5)
       rack-protection (~> 1.4)
       tilt (>= 1.3, < 3)
+    thin (1.6.4)
+      daemons (~> 1.0, >= 1.0.9)
+      eventmachine (~> 1.0, >= 1.0.4)
+      rack (~> 1.0)
     thread_safe (0.3.5)
     tilt (2.0.2)
     tzinfo (1.2.2)
@@ -78,3 +84,7 @@ DEPENDENCIES
   actionmailer
   letter_opener
   sinatra
+  thin
+
+BUNDLED WITH
+   1.11.2

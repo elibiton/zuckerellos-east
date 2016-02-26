@@ -1,6 +1,3 @@
-
-
-
 class Mailer < ActionMailer::Base
   def contact(params)
     mail(
@@ -29,17 +26,15 @@ configure do
         :authentication => :plain,
         :user_name => ENV['SENDGRID_USERNAME'],
         :password => ENV['SENDGRID_PASSWORD'],
-        :domain => ENV['SENDGRID_DOMAIN'],
+        :domain => 'heroku.com',
     }
     ActionMailer::Base.view_paths = File.join(Sinatra::Application.root, 'views')
 
   else
     ActionMailer::Base.add_delivery_method :letter_opener, LetterOpener::DeliveryMethod, :location => File.expand_path('../tmp/letter_opener', __FILE__)
-
     ActionMailer::Base.delivery_method = :letter_opener
     ActionMailer::Base.file_settings = { :location => File.join(Sinatra::Application.root, 'tmp/emails') }
     ActionMailer::Base.view_paths = File.join(Sinatra::Application.root, 'views')
-
   end
 
 end
