@@ -1,9 +1,9 @@
 class Mailer < ActionMailer::Base
   def contact(params)
     mail(
-        :to      => "test@example.com",
-        :from    => "test@example.com",
-        :subject => "Test") do |format|
+        :to      => "re@escalatecorp.com",
+        :from    => "re@escalatecorp.com",
+        :subject => "Customer Information") do |format|
       format.html {
         render locals: {
                    params: params
